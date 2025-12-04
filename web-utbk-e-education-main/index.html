@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Latihan UTBK</title>
+
+  <style>
+    :root {
+      --primary: #1e40af; /* biru UTBK */
+      --primary-light: #3b82f6;
+      --bg: #f1f5f9;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 16px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    }
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--primary-light);
+    }
+
+    /* CONTENT LAYOUT */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 16px;
+      flex: 1; /* Agar footer turun ke bawah */
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,.06);
+      margin-bottom: 20px;
+    }
+
+    h2 { margin-top: 0; }
+    p { line-height: 1.6; }
+
+    /* MENU GRID (Pilihan Tes) */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Dua kolom */
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* Responsif untuk layar kecil (HP) */
+    @media (max-width: 600px) {
+      .menu-grid {
+        grid-template-columns: 1fr; /* Satu kolom */
+      }
+    }
+
+    .menu-item {
+      text-align: center;
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px); /* Efek naik saat di-hover */
+      border: 1px solid var(--primary-light);
+    }
+
+    .icon-placeholder {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .btn:hover {
+      background: var(--primary-light);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e2e8f0;
+      color: var(--muted);
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h2 style="margin:0;">Portal UTBK</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#menu-pilihan">Pilih Tes</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <section class="card">
+      <h2>Selamat Datang di Portal UTBK</h2>
+      <p>
+        Website ini menyediakan latihan soal UTBK dengan sistem penilaian otomatis,
+        pembahasan, dan tampilan modern seperti portal resmi.
+      </p>
+      <p>Silakan pilih jenis tes di bawah ini untuk memulai latihan.</p>
+    </section>
+
+    <h3 id="menu-pilihan" style="margin-bottom: 15px; color: var(--muted);">Daftar Tes Tersedia</h3>
+    
+    <div class="menu-grid">
+      
+      <div class="card menu-item">
+        <div>
+          <div class="icon-placeholder">📚</div>
+          <h3>Tes Literasi</h3>
+          <p class="muted">Latihan kemampuan membaca, memahami, dan menganalisis Bahasa Indonesia, Bahasa Inggris, dan Matematika.</p>
+        </div>
+        <a href="tl.html" class="btn">Mulai Tes Literasi</a>
+      </div>
+
+      <div class="card menu-item">
+        <div>
+          <div class="icon-placeholder">🧠</div>
+          <h3>Tes Potensi Skolastik</h3>
+          <p class="muted">Latihan kemampuan kognitif, penalaran umum, matematika dasar, dan logika.</p>
+        </div>
+        <a href="tps.html" class="btn">Mulai Tes TPS</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <small>© 2025 Portal UTBK. Semua Hak Dilindungi.</small>
+  </footer>
+
+</body>
+</html>
