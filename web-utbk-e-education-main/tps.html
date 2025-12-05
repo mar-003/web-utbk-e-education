@@ -79,6 +79,10 @@
       cursor: pointer;
       transition: 0.2s;
     }
+    .options img {
+      width: 70px;
+      height: auto;
+    }
     .options label:hover {
       background: #f0f6ff;
       border-color: var(--primary);
@@ -121,6 +125,17 @@
       border-radius: 8px;
       margin-top: 12px;
     }
+
+    .answer-question img {
+      width: 70px;
+      height: auto; /* Agar gambar proporsional (tidak gepeng) */
+}
+    
+    /* Utility for Math display */
+    .math-eq {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
   </style>
 </head>
 
@@ -131,218 +146,96 @@
       <h2 style="margin:0;">Portal UTBK</h2>
       <nav>
         <a href="index.html">Home</a>
-        <a href="#tes">Tes UTBK</a>
       </nav>
     </div>
   </header>
 
   <section id="tes" class="container">
     <div class="card">
-      <h2>TES LITERASI & PENALARAN</h2>
-      <h3></h3>
+      <h2>TES POTENSI SKOLASTIK</h2>
+
       <p class="muted">Jawab semua soal lalu klik <b>Periksa Jawaban</b>.</p>
 
       <form id="quizForm">
 
+        <!-- Soal No 1-5 -->
         <div class="quiz-question">
-          <h3>1. Soal Literasi Bahasa Indonesia</h3>
-          <p>Bacalah teks berikut!</p>
-          <p>Pemanasan global mengakibatkan perubahan iklim yang signifikan. Es di kutub mencair, permukaan air laut naik, dan cuaca ekstrem semakin sering terjadi. Salah satu penyebab utama adalah emisi gas rumah kaca dari aktivitas manusia, seperti pembakaran bahan bakar fosil. Upaya mitigasi diperlukan untuk mengurangi dampak tersebut, antara lain dengan beralih ke energi terbarukan.</p>
-          <p>Inti dari teks di atas adalah…</p>
+          <h3>1. Pola Bilangan</h3>
+          <p>Diketahui <span class="math-eq">U<sub>n</sub></span> merupakan suku ke-n dari suatu barisan geometri dengan tiga suku pertamanya berturut-turut adalah <span class="math-eq">(p + 3), (p - 2), (p - 8)</span>. Suku kelima dari barisan tersebut adalah ….</p>
           <div class="options">
-            <label><input type="radio" name="q1" value="A"> A. Efek dari pemanasan global pada cuaca ekstrem</label>
-            <label><input type="radio" name="q1" value="B"> B. Penyebab dan dampak pemanasan global serta upaya mengatasinya</label>
-            <label><input type="radio" name="q1" value="C"> C. Mencairnya es di kutub akibat emisi gas rumah kaca</label>
-            <label><input type="radio" name="q1" value="D"> D. Pentingnya energi terbarukan untuk mitigasi perubahan iklim</label>
-            <label><input type="radio" name="q1" value="E"> E. Aktivitas manusia sebagai satu-satunya penyebab pemanasan global</label>
+            <label><input type="radio" name="q1" value="A"> A. <img src="assets/images/TPS Soal 1_Pilihan A.jpg" alt="-7.776 / 125" ></label>
+            <label><input type="radio" name="q1" value="B"> B. <img src="assets/images/TPS Soal 1_Pilihan B.jpg" alt="-1.296 / 25" width="70px"></label>
+            <label><input type="radio" name="q1" value="C"> C. <img src="assets/images/TPS Soal 1_Pilihan C.jpg" alt="1.296 / 25" width="70px"></label>
+            <label><input type="radio" name="q1" value="D"> D. <img src="assets/images/TPS Soal 1_Pilihan D.jpg" alt="7.776 / 125" width="70px"></label>
+            <label><input type="radio" name="q1" value="E"> E. <img src="assets/images/TPS Soal 1_Pilihan E.jpg" alt="7.776 / 25" width="70px"></label>
           </div>
         </div>
 
+        <!-- Soal No 2 -->
         <div class="quiz-question">
-          <h3>2. Soal Literasi Bahasa Indonesia</h3>
-          <p>Bacalah kalimat berikut!</p>
-          <p>Peneliti tersebut mengungkapkan bahwa hasil risetnya masih bersifat tentatif, sehingga perlu penelitian lanjutan untuk memastikan temuan awal.</p>
-          <p>Kata tentatif dalam kalimat tersebut bermakna…</p>
+          <h3>2. Aljabar dan Fungsi (Persamaan Garis)</h3>
+          <p>Diketahui persamaan garis <i>g</i> adalah <span class="math-eq">(2x - y) + p(x + y) = p</span> dan persamaan garis <i>h</i> adalah <span class="math-eq">(x - 4y) + 2p(x + y) = 3p</span>. Jika garis <i>g</i> dan garis <i>h</i> saling sejajar, nilai dari <span class="math-eq">-2p</span> adalah ….</p>
           <div class="options">
-            <label><input type="radio" name="q2" value="A"> A. Akurat</label>
-            <label><input type="radio" name="q2" value="B"> B. Sementara</label>
-            <label><input type="radio" name="q2" value="C"> C. Komprehensif</label>
-            <label><input type="radio" name="q2" value="D"> D. Spekulatif</label>
-            <label><input type="radio" name="q2" value="E"> E. Final</label>
+            <label><input type="radio" name="q2" value="A"> A. 14</label>
+            <label><input type="radio" name="q2" value="B"> B. 7</label>
+            <label><input type="radio" name="q2" value="C"> C. -7</label>
+            <label><input type="radio" name="q2" value="D"> D. -14</label>
+            <label><input type="radio" name="q2" value="E"> E. -16</label>
           </div>
         </div>
 
+        <!-- Soal No 3 -->
         <div class="quiz-question">
-          <h3>3. Soal Literasi Bahasa Indonesia</h3>
-          <p>Teks 1: Penggunaan plastik sekali pakai telah menjadi isu lingkungan yang serius. Banyak negara mulai melarang penggunaan kantong plastik di pasar swalayan.</p>
-          <p>Teks 2: Meski demikian, industri plastik masih menjadi penyumbang lapangan kerja bagi ribuan orang. Penghentian secara tiba-tiba dapat menimbulkan masalah ekonomi.</p>
-          <p>Hubungan antara Teks 1 dan Teks 2 adalah…</p>
+          <h3>3. Geometri (Bangun Datar)</h3>
+          <p>Perhatikan gambar berikut!</p>
+          <p><img src="assets/images/TPS Soal 3.jpg" alt="" width="180px"></p>
+          <p>Luas dan keliling segi empat ABCD berturut-turut adalah <i>p</i> satuan luas dan <i>q</i> satuan panjang dengan <i>p : q = 3 : 1</i>. Diketahui perbandingan sisi <span class="math-eq">CD : BC : AB = 1 : 2 : 3</span>.</p>
+          <p>Panjang sisi <span class="math-eq">CD</span> adalah … satuan panjang.</p>
           <div class="options">
-            <label><input type="radio" name="q3" value="A"> A. Teks 1 menyatakan masalah, Teks 2 menjelaskan solusi</label>
-            <label><input type="radio" name="q3" value="B"> B. Teks 1 menyajikan fakta, Teks 2 menyangkal fakta tersebut</label>
-            <label><input type="radio" name="q3" value="C"> C. Teks 1 menunjukkan dampak negatif, Teks 2 menunjukkan dampak positif</label>
-            <label><input type="radio" name="q3" value="D"> D. Teks 1 mengungkapkan dampak lingkungan, Teks 2 mengungkapkan dampak ekonomi</label>
-            <label><input type="radio" name="q3" value="E"> E. Teks 1 dan Teks 2 saling bertentangan secara langsung</label>
+            <label><input type="radio" name="q3" value="A"> A. 2/3</label>
+            <label><input type="radio" name="q3" value="B"> B. &radic;6</label>
+            <label><input type="radio" name="q3" value="C"> C. 3</label>
+            <label><input type="radio" name="q3" value="D"> D. 2&radic;3</label>
+            <label><input type="radio" name="q3" value="E"> E. 6</label>
           </div>
         </div>
 
+        <!-- Soal No 4 -->
         <div class="quiz-question">
-          <h3>4. Soal Literasi Bahasa Indonesia</h3>
-          <p>Perhatikan kalimat berikut:</p>
-          <p>Meskipun hujan deras mengguyur kota sejak pagi, tetapi kegiatan kerja bakti tetap dilaksanakan dengan semangat.</p>
-          <p>Kesalahan dalam kalimat tersebut terletak pada…</p>
+          <h3>4. Statistika dan Peluang (Aturan Pencacahan)</h3>
+          <p>Diketahui pada suatu seleksi calon karyawan terdapat 3 orang pria dan 4 orang wanita yang duduk secara melingkar. Dalam seleksi tersebut, mereka wajib mengerjakan 8 soal dari 12 soal tes yang diberikan dan akan dipilih 3 orang yang lolos seleksi sebagai karyawan.</p>
+          <p>Berdasarkan informasi tersebut, manakah di antara pernyataan berikut yang bernilai <b>benar</b>?</p>
+          <ol>
+              <li>Banyak cara duduk calon karyawan tersebut adalah 210 cara.</li>
+              <li>Jika 5 soal pertama wajib dikerjakan, banyak kemungkinan pilihan soal yang dikerjakan dari setiap calon karyawan adalah 120 cara.</li>
+              <li>Banyak kemungkinan variasi peserta yang lolos seleksi adalah 70.</li>
+              <li>Banyak kemungkinan jika seorang pria dan 2 orang wanita yang lolos seleksi adalah 18.</li>
+          </ol>
           <div class="options">
-            <label><input type="radio" name="q4" value="A"> A. Penggunaan kata meskipun dan tetapi yang bersamaan</label>
-            <label><input type="radio" name="q4" value="B"> B. Penempatan keterangan waktu</label>
-            <label><input type="radio" name="q4" value="C"> C. Pilihan kata yang tidak tepat</label>
-            <label><input type="radio" name="q4" value="D"> D. Subjek kalimat yang tidak jelas</label>
-            <label><input type="radio" name="q4" value="E"> E. Tidak ada kesalahan</label>
+            <label><input type="radio" name="q4" value="A"> A. 1, 2, dan 3 SAJA yang benar</label>
+            <label><input type="radio" name="q4" value="B"> B. 1 dan 3 SAJA yang benar</label>
+            <label><input type="radio" name="q4" value="C"> C. 2 dan 4 SAJA yang benar</label>
+            <label><input type="radio" name="q4" value="D"> D. HANYA 4 yang benar</label>
+            <label><input type="radio" name="q4" value="E"> E. SEMUA pilihan benar</label>
           </div>
         </div>
 
+        <!-- Soal No 5 -->
         <div class="quiz-question">
-          <h3>5. Soal Literasi Bahasa Indonesia</h3>
-          <p>Teks untuk soal:</p>
-          <p>Pembelajaran daring memiliki beberapa kelebihan, seperti fleksibilitas waktu dan akses materi yang luas. Namun, pembelajaran ini juga memiliki kelemahan, misalnya kurangnya interaksi langsung antara guru dan siswa, serta kendala sinyal internet di daerah tertentu.</p>
-          <p>Pernyataan yang sesuai dengan isi teks adalah…</p>
+          <h3>5. Aljabar dan Fungsi</h3>
+          <p>Diberikan sebuah fungsi <span class="math-eq">f(n) = (-1)<sup>n</sup> &radic;((n - 5)<sup>2</sup> + 20n)</span> dengan <i>n</i> merupakan suatu bilangan bulat. Berdasarkan informasi tersebut, manakah di antara pernyataan berikut yang bernilai <b>benar</b>?</p>
+          <ol>
+              <li>Jika n adalah bilangan genap, <span class="math-eq">f(n + n<sup>2</sup>)</span> bernilai ganjil.</li>
+              <li>Jika n adalah bilangan ganjil, <span class="math-eq">f(n) + f(2n)</span> bernilai ganjil.</li>
+              <li><span class="math-eq">f(2.021) + 5 = -f(2.016)</span></li>
+              <li><span class="math-eq">f(2.017) + f(2.018) = 1</span></li>
+          </ol>
           <div class="options">
-            <label><input type="radio" name="q5" value="A"> A. Pembelajaran daring tidak memiliki interaksi sama sekali</label>
-            <label><input type="radio" name="q5" value="B"> B. Kendala sinyal hanya terjadi di daerah perkotaan</label>
-            <label><input type="radio" name="q5" value="C"> C. Fleksibilitas waktu merupakan salah satu keunggulan pembelajaran daring</label>
-            <label><input type="radio" name="q5" value="D"> D. Pembelajaran daring lebih unggul daripada pembelajaran tatap muka</label>
-            <label><input type="radio" name="q5" value="E"> E. Semua siswa mengalami kendala sinyal internet</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>6. Soal Literasi Bahasa Inggris</h3>
-          <p>Read the text below.</p>
-          <p>The giant panda, native to China, is an endangered species. Its diet consists mainly of bamboo, which has low nutritional value, forcing pandas to eat large amounts daily. Conservation efforts have been implemented, including habitat protection and breeding programs, resulting in a gradual increase in their population in recent years.</p>
-          <p>What is the main idea of the text?</p>
-          <div class="options">
-            <label><input type="radio" name="q6" value="A"> A. The giant panda’s diet</label>
-            <label><input type="radio" name="q6" value="B"> B. Conservation efforts for pandas</label>
-            <label><input type="radio" name="q6" value="C"> C. The habitat of giant pandas</label>
-            <label><input type="radio" name="q6" value="D"> D. The status and conservation of giant pandas</label>
-            <label><input type="radio" name="q6" value="E"> E. Breeding programs in China</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>7. Soal Literasi Bahasa Inggris</h3>
-          <p>Despite initial skepticism, the new policy has proven to be quite effective in reducing urban traffic congestion during peak hours.</p>
-          <p>The word <i>skepticism</i> is closest in meaning to …</p>
-          <div class="options">
-            <label><input type="radio" name="q7" value="A"> A. enthusiasm</label>
-            <label><input type="radio" name="q7" value="B"> B. doubt</label>
-            <label><input type="radio" name="q7" value="C"> C. agreement</label>
-            <label><input type="radio" name="q7" value="D"> D. curiosity</label>
-            <label><input type="radio" name="q7" value="E"> E. rejection</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>8. Soal Literasi Bahasa Inggris</h3>
-          <p><b>Text 1:</b> Many students prefer online learning because it allows them to study at their own pace and review materials repeatedly.</p>
-          <p><b>Text 2:</b> On the other hand, some educators argue that online learning reduces student motivation and hampers the development of social skills.</p>
-          <p>What is the relationship between Text 1 and Text 2?</p>
-          <div class="options">
-            <label><input type="radio" name="q8" value="A"> A. Text 2 supports the idea in Text 1</label>
-            <label><input type="radio" name="q8" value="B"> B. Text 2 presents a contrasting view to Text 1</label>
-            <label><input type="radio" name="q8" value="C"> C. Text 1 and Text 2 discuss different topics</label>
-            <label><input type="radio" name="q8" value="D"> D. Text 2 provides examples for Text 1</label>
-            <label><input type="radio" name="q8" value="E"> E. Text 1 explains the cause, Text 2 explains the effect</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>9. Soal Literasi Bahasa Inggris</h3>
-          <p>The company decided to ________ its marketing strategy after noticing a decline in sales over the last quarter.</p>
-          <p>The most appropriate word to complete the sentence is …</p>
-          <div class="options">
-            <label><input type="radio" name="q9" value="A"> A. maintain</label>
-            <label><input type="radio" name="q9" value="B"> B. revise</label>
-            <label><input type="radio" name="q9" value="C"> C. stabilize</label>
-            <label><input type="radio" name="q9" value="D"> D. ignore</label>
-            <label><input type="radio" name="q9" value="E"> E. praise</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>10. Soal Literasi Bahasa Inggris</h3>
-          <p>Read the following passage:</p>
-          <p>Climate change poses a serious threat to global food security. Rising temperatures and unpredictable rainfall can reduce crop yields, especially in tropical regions. Adaptation strategies, such as developing drought-resistant crops and improving irrigation systems, are crucial to mitigate these effects.</p>
-          <p>Which statement is TRUE according to the passage?</p>
-          <div class="options">
-            <label><input type="radio" name="q10" value="A"> A. Climate change only affects tropical regions</label>
-            <label><input type="radio" name="q10" value="B"> B. Food security is not influenced by rainfall patterns</label>
-            <label><input type="radio" name="q10" value="C"> C. Crop yields may decrease due to climate change</label>
-            <label><input type="radio" name="q10" value="D"> D. Drought-resistant crops are not an effective solution</label>
-            <label><input type="radio" name="q10" value="E"> E. Irrigation systems are irrelevant to climate change adaptation</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>11. Soal Penalaran Matematika</h3>
-          <p>Sebuah toko memberikan diskon 20% untuk semua barang. Jika seorang pelanggan membeli sebuah jaket seharga Rp 320.000 setelah diskon, harga jaket sebelum diskon adalah …</p>
-          <div class="options">
-            <label><input type="radio" name="q11" value="A"> A. Rp 360.000</label>
-            <label><input type="radio" name="q11" value="B"> B. Rp 380.000</label>
-            <label><input type="radio" name="q11" value="C"> C. Rp 400.000</label>
-            <label><input type="radio" name="q11" value="D"> D. Rp 420.000</label>
-            <label><input type="radio" name="q11" value="E"> E. Rp 450.000</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>12. Soal Penalaran Matematika</h3>
-          <p>Dalam suatu kelas terdapat 30 siswa. Rata-rata nilai matematika 18 siswa adalah 75, dan rata-rata nilai matematika siswa lainnya adalah 60. Rata-rata nilai matematika seluruh siswa adalah …</p>
-          <div class="options">
-            <label><input type="radio" name="q12" value="A"> A. 66</label>
-            <label><input type="radio" name="q12" value="B"> B. 67</label>
-            <label><input type="radio" name="q12" value="C"> C. 68</label>
-            <label><input type="radio" name="q12" value="D"> D. 69</label>
-            <label><input type="radio" name="q12" value="E"> E. 70</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>13. Soal Penalaran Matematika</h3>
-          <p>Jika x dan y memenuhi sistem persamaan :</p>
-          <p>2x + y = 10 <br> x – y = 2</p>
-          <p>Maka nilai x.y adalah…</p>
-          <div class="options">
-            <label><input type="radio" name="q13" value="A"> A. 6</label>
-            <label><input type="radio" name="q13" value="B"> B. 8</label>
-            <label><input type="radio" name="q13" value="C"> C. 10</label>
-            <label><input type="radio" name="q13" value="D"> D. 12</label>
-            <label><input type="radio" name="q13" value="E"> E. 15</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>14. Soal Penalaran Matematika</h3>
-          <p>Sebuah segitiga siku – siku memiliki Panjang sisi – sisi a, b, dan c dengan c sebagai hipotenusa.</p>
-          <p>Jika a = 6cm dan b = 8cm, maka Panjang c adalah…</p>
-          <div class="options">
-            <label><input type="radio" name="q14" value="A"> A. 10 cm</label>
-            <label><input type="radio" name="q14" value="B"> B. 12 cm</label>
-            <label><input type="radio" name="q14" value="C"> C. 14 cm</label>
-            <label><input type="radio" name="q14" value="D"> D. 15 cm</label>
-            <label><input type="radio" name="q14" value="E"> E. 16 cm</label>
-          </div>
-        </div>
-
-        <div class="quiz-question">
-          <h3>15. Soal Penalaran Matematika</h3>
-          <p>Sebuah toko menjual sepatu dengan harga Rp 500.000. Toko tersebut memberikan diskon berturut-turut sebesar 20% dan kemudian 10% dari harga setelah diskon pertama.</p>
-          <p>Harga akhir sepatu setelah kedua diskon tersebut adalah ...</p>
-          <div class="options">
-            <label><input type="radio" name="q15" value="A"> A. Rp 340.000</label>
-            <label><input type="radio" name="q15" value="B"> B. Rp 350.000</label>
-            <label><input type="radio" name="q15" value="C"> C. Rp 360.000</label>
-            <label><input type="radio" name="q15" value="D"> D. Rp 380.000</label>
-            <label><input type="radio" name="q15" value="E"> E. Rp 400.000</label>
+            <label><input type="radio" name="q5" value="A"> A. 1, 2, dan 3 SAJA yang benar</label>
+            <label><input type="radio" name="q5" value="B"> B. 1 dan 3 SAJA yang benar</label>
+            <label><input type="radio" name="q5" value="C"> C. 2 dan 4 SAJA yang benar</label>
+            <label><input type="radio" name="q5" value="D"> D. HANYA 4 yang benar</label>
+            <label><input type="radio" name="q5" value="E"> E. SEMUA pilihan benar</label>
           </div>
         </div>
 
@@ -359,18 +252,20 @@
   </footer>
 
   <script>
-    // Saya update daftar jawaban untuk soal 1-15
+    // Kunci Jawaban
     const answers = { 
-      q1: "B", q2: "B", q3: "D", q4: "A", q5: "C", 
-      q6: "D", q7: "B", q8: "B", q9: "B", q10: "C",
-      q11: "C", q12: "D", q13: "D", q14: "A", q15: "C"
+      q1: "B",
+      q2: "D",
+      q3: "E",
+      q4: "D",
+      q5: "E"
     };
 
     function checkAnswers() {
       const form = document.getElementById("quizForm");
       const resultBox = document.getElementById("result");
       let score = 0;
-      let total = 15; // Jumlah soal sekarang jadi 15
+      let total = 5;
       let missing = [];
       const data = new FormData(form);
 
@@ -391,23 +286,13 @@
       resultBox.innerHTML =
         `<h3>Hasil: <span class="score">${score}/${total}</span> (${percent}%)</h3>`;
 
-      // Kunci jawaban lengkap
+      // Pembahasan Kunci Jawaban
       const pemb = {
-        q1: "B. Penyebab dan dampak pemanasan global serta upaya mengatasinya",
-        q2: "B. Sementara",
-        q3: "D. Teks 1 mengungkapkan dampak lingkungan, Teks 2 mengungkapkan dampak ekonomi",
-        q4: "A. Penggunaan kata meskipun dan tetapi yang bersamaan",
-        q5: "C. Fleksibilitas waktu merupakan salah satu keunggulan pembelajaran daring",
-        q6: "D. The status and conservation of giant pandas",
-        q7: "B. doubt",
-        q8: "B. Text 2 presents a contrasting view to Text 1",
-        q9: "B. revise",
-        q10: "C. Crop yields may decrease due to climate change",
-        q11: "C. Rp 400.000",
-        q12: "D. 69",
-        q13: "D. 12",
-        q14: "A. 10 cm",
-        q15: "C. Rp 360.000"
+        q1: 'B. <img src="assets/images/TPS Soal 1_Pilihan B.jpg" alt="-7.776 / 125" style="width: 70px;">',
+        q2: "D. -14",
+        q3: "E. 6",
+        q4: "D. HANYA 4 yang benar",
+        q5: "E. SEMUA pilihan benar"
       };
 
       resultBox.innerHTML += `<div class='explain'><h4>Kunci Jawaban</h4>`;
