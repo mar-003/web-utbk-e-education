@@ -163,11 +163,11 @@
           <h3>1. Pola Bilangan</h3>
           <p>Diketahui <span class="math-eq">U<sub>n</sub></span> merupakan suku ke-n dari suatu barisan geometri dengan tiga suku pertamanya berturut-turut adalah <span class="math-eq">(p + 3), (p - 2), (p - 8)</span>. Suku kelima dari barisan tersebut adalah ….</p>
           <div class="options">
-            <label><input type="radio" name="q1" value="A"> A. <img src="assets/images/TPS Soal 1_Pilihan A.jpg" alt="-7.776 / 125" ></label>
-            <label><input type="radio" name="q1" value="B"> B. <img src="assets/images/TPS Soal 1_Pilihan B.jpg" alt="-1.296 / 25" width="70px"></label>
-            <label><input type="radio" name="q1" value="C"> C. <img src="assets/images/TPS Soal 1_Pilihan C.jpg" alt="1.296 / 25" width="70px"></label>
-            <label><input type="radio" name="q1" value="D"> D. <img src="assets/images/TPS Soal 1_Pilihan D.jpg" alt="7.776 / 125" width="70px"></label>
-            <label><input type="radio" name="q1" value="E"> E. <img src="assets/images/TPS Soal 1_Pilihan E.jpg" alt="7.776 / 25" width="70px"></label>
+            <label><input type="radio" name="q1" value="A"> A. <img src="assets/image/TPS Soal 1_Pilihan A.jpg" alt="-7.776 / 125" ></label>
+            <label><input type="radio" name="q1" value="B"> B. <img src="assets/image/TPS Soal 1_Pilihan B.jpg" alt="-1.296 / 25" width="70px"></label>
+            <label><input type="radio" name="q1" value="C"> C. <img src="assets/image/TPS Soal 1_Pilihan C.jpg" alt="1.296 / 25" width="70px"></label>
+            <label><input type="radio" name="q1" value="D"> D. <img src="assets/image/TPS Soal 1_Pilihan D.jpg" alt="7.776 / 125" width="70px"></label>
+            <label><input type="radio" name="q1" value="E"> E. <img src="assets/image/TPS Soal 1_Pilihan E.jpg" alt="7.776 / 25" width="70px"></label>
           </div>
         </div>
 
@@ -239,6 +239,22 @@
           </div>
         </div>
 
+        <!-- Soal No 6 -->
+        <div class="quiz-question">
+          <h3>6. Kesesuaian Pernyataan</h3>
+           <video controls width="400">
+            <source src="assets/video/VideoTPS1.mp4" type="video/mp4">
+          </video>
+          <p>Pernyataan berikut yang TIDAK SESUAI dengan video di atas adalah</p>
+          <div class="options">
+            <label><input type="radio" name="q6" value="A"> A. Spider-Man: No Way Home mendapatkan 11 ulasan negatif di Rotten Tomatoes.</label>
+            <label><input type="radio" name="q6" value="B"> B. Film “Spider-Man: No Way Home” adalah film dengan penjualan tertinggi di masa pandemi Covid-19.</label>
+            <label><input type="radio" name="q6" value="C"> C. Penerimaan domestik “Spider-Man: No Way Home” hingga akhir pekan penayangan perdana diperkirakan mencapai 3,6 Triliun.</label>
+            <label><input type="radio" name="q6" value="D"> D. “Spider-Man: No Way Home” menceritakan tentang masalah yang dialami Spider-Man setelah difitnah dan dibongkar identitasnya.</label>
+            <label><input type="radio" name="q6" value="E"> E. Hingga akhir pekan penayangan perdananya, film “Spider-Man No Way Home” masuk dalam sepuluh besar film debut sepanjang masa.</label>
+          </div>
+        </div>
+
         <button type="button" class="btn" onclick="checkAnswers()">Periksa Jawaban</button>
         <button type="button" class="btn btn-secondary" onclick="resetQuiz()">Reset</button>
       </form>
@@ -258,14 +274,15 @@
       q2: "D",
       q3: "E",
       q4: "D",
-      q5: "E"
+      q5: "E",
+      q6: "E"
     };
 
     function checkAnswers() {
       const form = document.getElementById("quizForm");
       const resultBox = document.getElementById("result");
       let score = 0;
-      let total = 5;
+      let total = 6;
       let missing = [];
       const data = new FormData(form);
 
@@ -292,7 +309,8 @@
         q2: "D. -14",
         q3: "E. 6",
         q4: "D. HANYA 4 yang benar",
-        q5: "E. SEMUA pilihan benar"
+        q5: "E. SEMUA pilihan benar",
+        q6: 'E. Hingga akhir pekan penayangan perdananya, film “Spider-Man No Way Home” masuk dalam sepuluh besar film debut sepanjang masa.'
       };
 
       resultBox.innerHTML += `<div class='explain'><h4>Kunci Jawaban</h4>`;
